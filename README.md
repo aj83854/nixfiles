@@ -1,3 +1,3 @@
-nix utilities
+\*nix utilities
 =============
 
