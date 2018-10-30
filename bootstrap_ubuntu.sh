@@ -26,7 +26,6 @@ then
       ffmpeg
       gcc
       gifsicle
-      git
       graphviz
       gst-plugins-base
       gst-plugins-good
