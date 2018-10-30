@@ -51,12 +51,12 @@ then
 
   # Installs defined packages
   echo "Installing apt packages..."
-  sudo apt install ${PACKAGES[@]}
+  sudo apt install ${PACKAGES[@]} -y
 
   # For versions >= 18.04.01, Python 3.6.6 should come pre-installed;
   # However, pip does not- so we'll need to install pip3 for python3. 
   echo "Installing pip for Python3..."
-  sudo apt install python3-pip
+  sudo apt install python3-pip -y
 
   # Installs global python packages
   echo "Installing Python3 packages..."
