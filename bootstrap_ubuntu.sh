@@ -1,7 +1,6 @@
 #!/bin/bash
-
-#   Ubuntu Linux  >= 16.04  bootstrap / quicksetup script.
 #
+#   Ubuntu Linux  >= 18.04  bootstrap / quicksetup script.
 #
 
 echo "This script will install basic components, and although idempotent, is intended to be run on new Ubuntu builds."
@@ -18,13 +17,14 @@ then
   echo "Refreshing repo index and upgrading base packages..."
   sudo apt update && sudo apt upgrade -y
 
-  # Defines brew packages for install
+  # Defines apt packages for install
   PACKAGES=(
       ack
       autoconf
       automake
       boot2docker
       ffmpeg
+      gcc
       gifsicle
       git
       graphviz
@@ -33,13 +33,15 @@ then
       gstreamer
       libjpeg
       libmemcached
+      libtool
+      make
       markdown
       memcached
       mongodb
       npm
+      perl
       pkg-config
       postgresql
-      python
       rename
       ssh-copy-id
       tmux
@@ -48,16 +50,14 @@ then
       wget
   )
 
-  # Installs the defined packages
+  # Installs defined packages
   echo "Installing apt packages..."
   sudo apt install ${PACKAGES[@]}
 
-  # Use cask to install extra fonts
-  echo "Installing extra fonts..."
-  FONTS=(
-      font-roboto-mono
-  )
-  brew cask install ${FONTS[@]}
+  # For versions >= 18.04.01, Python 3.6.6 should come pre-installed;
+  # However, pip does not- so we'll need to install pip3 for python3. 
+  echo "Installing pip for Python3..."
+  sudo apt install python3-pip
 
   # Installs global python packages
   echo "Installing Python3 packages..."
@@ -66,11 +66,9 @@ then
   )
   pip3 install ${PYTHON_PACKAGES[@]}
 
-  # Installs global npm packages
-  echo "Installing global Node Package Manager packages..."
-  npm install marked -g
-
-  echo "Ubuntu setup script complete!"
+  echo "Ubuntu setup now complete!"
+  echo "============================="
+  echo "If this is a virtual machine, consider installing any provided guest additions media now."
 
 else # Quits script if anything other than y|Y is input at prompt
   echo "Exiting script! (no changes made)"
