@@ -22,16 +22,10 @@ then
       ack
       autoconf
       automake
-      boot2docker
       ffmpeg
       gcc
       gifsicle
       graphviz
-      gst-plugins-base
-      gst-plugins-good
-      gstreamer
-      libjpeg
-      libmemcached
       libtool
       make
       markdown
@@ -42,7 +36,6 @@ then
       pkg-config
       postgresql
       rename
-      ssh-copy-id
       tmux
       tree
       vim
