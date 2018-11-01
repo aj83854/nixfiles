@@ -14,7 +14,7 @@ This is intended/tested on Ubuntu 18.04 and above, but, being a simple bash scri
 
 ### Instructions
 
-*NOTE: If you intend to clone this script instead of copy/pasting into your own, make sure you install git as it is not pre-installed on new Ubuntu installations: `sudo apt install git` *
+*NOTE: If you intend to clone this script instead of copy/pasting into your own, make sure you install git as it is not pre-installed on new Ubuntu installations: `sudo apt install git`*
 
 **1**. Start a new terminal session, and type the following to download this repo:
 
