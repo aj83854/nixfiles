@@ -28,10 +28,17 @@ git clone https://github.com/aj83854/nixfiles.git
 mv ~/nixfiles ~/bin && cd bin
 ~~~
 
-**3**. Execute script:
+**3**. Provide permissions for the script to run:
 
 ~~~
-bash bootstrap_ubuntu.sh
+chmod 755 bootstrap_ubuntu.sh
 ~~~
+
+**4**. Execute the script:
+
+~~~
+./bootstrap_ubuntu.sh
+~~~
+
 
 _______________________________________________
