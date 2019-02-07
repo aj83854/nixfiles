@@ -22,6 +22,7 @@ then
       ack
       autoconf
       automake
+      dkms
       ffmpeg
       gcc
       gifsicle
