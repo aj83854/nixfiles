@@ -32,11 +32,13 @@ then
       markdown
       memcached
       mongodb
+      mutt
       npm
       perl
       pkg-config
       postgresql
       rename
+      ssmtp
       tmux
       tree
       vim
