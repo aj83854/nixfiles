@@ -28,6 +28,7 @@ then
       gifsicle
       graphviz
       libtool
+      lynx
       make
       markdown
       memcached
@@ -42,6 +43,8 @@ then
       tmux
       tree
       vim
+      w3m
+      w3m-img
       wget
   )
 
