@@ -28,7 +28,6 @@ then
       gifsicle
       graphviz
       libtool
-      lynx
       make
       markdown
       memcached
