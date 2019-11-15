@@ -62,6 +62,13 @@ then
       pipenv
   )
   pip3 install ${PYTHON_PACKAGES[@]}
+  
+  # Installs NodeJS packages
+  echo "Installing NodeJS packages..."
+  NODE_PACKAGES=(
+      'nativefier -g'
+  )
+  sudo npm install ${NODE_PACKAGES[@]}
 
   echo "Ubuntu setup now complete!"
   echo "============================="
