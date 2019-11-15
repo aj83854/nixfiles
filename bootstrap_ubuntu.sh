@@ -66,7 +66,7 @@ then
   # Installs NodeJS packages
   echo "Installing NodeJS packages..."
   NODE_PACKAGES=(
-      'nativefier -g'
+      nativefier -g
   )
   sudo npm install ${NODE_PACKAGES[@]}
 
