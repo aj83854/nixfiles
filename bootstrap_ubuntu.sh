@@ -26,6 +26,7 @@ then
       ffmpeg
       gcc
       gifsicle
+      gnome-tweak-tool
       graphviz
       libtool
       make
